@@ -148,7 +148,7 @@ nav {
 }
 
 header {
-  border: 1px solid var(--header--bottom-line);
+  border-bottom: 1px solid var(--header--bottom-line);
 }
 .hero {
   text-align: center;
@@ -229,7 +229,7 @@ header {
   color: var(--dark-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.19;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -237,7 +237,7 @@ header {
 
 .team-text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -391,7 +391,7 @@ footer {
 
 .footer-flex {
   display: flex;
-  flex-direction: row;
+  align-items: baseline;
 }
 
 .footer-icons-list {
@@ -400,12 +400,10 @@ footer {
   align-content: center;
   margin-top: 20px;
   width: 206px;
-  height: 206px;
 }
 
 .footer-flex .footer-flex-item + .footer-flex-item {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-links-caption {
@@ -441,7 +439,6 @@ footer {
 }
 .team-contacts {
   display: flex;
-  height: 44px;
   margin-bottom: 30px;
   justify-content: space-between;
   align-content: center;
@@ -486,9 +483,11 @@ footer {
   align-items: center;
   margin-bottom: 30px;
 }
-
-.portfolio-item-div:hover,
-.portfolio-item-div:focus {
+.portfolio-item-link {
+  display: block;
+}
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
